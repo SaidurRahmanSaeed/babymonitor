@@ -1,0 +1,14 @@
+{
+  "sample_rate": 16000,
+  "frame_duration_sec": 0.5,
+  "cry_energy_threshold": 0.09,
+  "cry_frames_required": 4,
+  "email": {
+    "enabled": true,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "saeed@gmail.com",
+    "sender_password": "APP_PASSWORD_HERE",
+    "receiver_email": "PARENT_EMAIL@gmail.com"
+  }
+}
