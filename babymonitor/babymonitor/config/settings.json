@@ -7,8 +7,9 @@
     "enabled": true,
     "smtp_server": "smtp.gmail.com",
     "smtp_port": 587,
-    "sender_email": "saeed@gmail.com",
-    "sender_password": "APP_PASSWORD_HERE",
+    "sender_email": "saidursaeed126@gmail.com",
+    "sender_password": "saeed42",
     "receiver_email": "PARENT_EMAIL@gmail.com"
   }
 }
+
