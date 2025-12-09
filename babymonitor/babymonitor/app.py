@@ -7,7 +7,7 @@ from flask import Flask, render_template, Response, jsonify
 
 from audio_detection import CryDetector
 # for pi OS camera module support
-# from camera_stream import mjpeg_frame_generator
+from camera_stream import mjpeg_frame_generator
 
 # windows OS
 import platform
@@ -123,3 +123,4 @@ if __name__ == "__main__":
     # Start Flask app
     # On Pi you might want host="0.0.0.0" so other devices on LAN can connect
     app.run(host="0.0.0.0", port=5000, debug=False)
+
