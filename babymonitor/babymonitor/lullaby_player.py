@@ -1,64 +1,78 @@
-# lullaby_player.py
+import os
 import subprocess
 from pathlib import Path
-from threading import Lock
+from threading import RLock   # RLock avoids deadlock when stop is called inside play
 
-SOUNDS_DIR = Path("sounds")
+SOUNDS_DIR = Path(__file__).resolve().parent / "sounds"
 
 _lullaby_process = None
-_lock = Lock()
+_lock = RLock()
 
-
-def _get_sound_path(name: str) -> Path:
+def _resolve_sound(name: str):
     """
-    Map a simple name to a file in sounds/.
+    Accept 'lullaby1', 'lullaby1.wav', or 'sounds/lullaby1.wav'.
     """
-    candidates = {
+    p = Path(name)
+    if not p.suffix:  # no extension given -> assume wav in sounds/
+        p = SOUNDS_DIR / f"{name}.wav"
+    elif not p.is_absolute() and p.parts and p.parts[0] != "sounds":
+        # relative path like 'lullaby1.wav' -> look under sounds/
+        p = SOUNDS_DIR / p.name
+    if p.exists():
+        return p
+    # canonical short names mapping
+    mapping = {
         "lullaby1": SOUNDS_DIR / "lullaby1.wav",
         "whitenoise": SOUNDS_DIR / "whitenoise.wav",
     }
-    return candidates.get(name)
-
+    q = mapping.get(name)
+    return q if q and q.exists() else None
 
 def play_lullaby(name: str) -> bool:
     """
-    Start playing a lullaby by name.
-    Returns True if started, False if file not found.
+    Stop any previous playback and start a new one with aplay.
+    Honors APLAY_DEVICE if set (e.g., 'plughw:2,0').
     """
     global _lullaby_process
     with _lock:
-        # Stop any existing playback first
+        # stop any previous playback (safe if none)
         if _lullaby_process and _lullaby_process.poll() is None:
-            _lullaby_process.terminate()
-            _lullaby_process = None
+            try:
+                _lullaby_process.terminate()
+            finally:
+                _lullaby_process = None
 
-        sound_path = _get_sound_path(name)
-        if not sound_path or not sound_path.exists():
-            print(f"[Lullaby] Sound '{name}' not found.")
+        sound_path = _resolve_sound(name)
+        if not sound_path:
+            print(f"[Lullaby] Sound '{name}' not found under {SOUNDS_DIR}")
             return False
 
-        # Use ffplay in "no display" and "no interaction" mode
-        cmd = [
-            "ffplay",
-            "-nodisp",
-            "-autoexit",
-            "-loglevel", "quiet",
-            str(sound_path),
-        ]
-        print(f"[Lullaby] Playing {sound_path}")
-        _lullaby_process = subprocess.Popen(cmd)
-        return True
+        dev = os.getenv("APLAY_DEVICE")
+        cmd = ["aplay"]
+        if dev:
+            cmd += ["-D", dev]
+        cmd += ["-q", str(sound_path)]
 
+        print("[Lullaby] running:", " ".join(cmd))
+        try:
+            _lullaby_process = subprocess.Popen(cmd)
+            return True
+        except Exception as e:
+            print(f"[Lullaby] Failed to start playback: {e}")
+            _lullaby_process = None
+            return False
 
 def stop_lullaby():
     """
-    Stop any currently playing lullaby.
+    Stop playback if it is running.
     """
     global _lullaby_process
     with _lock:
         if _lullaby_process and _lullaby_process.poll() is None:
             print("[Lullaby] Stopping playback")
-            _lullaby_process.terminate()
-            _lullaby_process = None
+            try:
+                _lullaby_process.terminate()
+            finally:
+                _lullaby_process = None
         else:
             print("[Lullaby] No active playback.")
