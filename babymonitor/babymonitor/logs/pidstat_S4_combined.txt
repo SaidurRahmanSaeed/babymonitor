@@ -1,0 +1,187 @@
+Linux 6.12.47+rpt-rpi-v8 (babypi) 	15/12/25 	_aarch64_	(4 CPU)
+
+17:30:37      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:38     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:37      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:38     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:38      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:39     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:30:38      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:39     1001      2946      2.00      0.00  875232  127656   3.28  python
+
+17:30:39      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:40     1001      2946    0.00    1.00    0.00    0.00    1.00     2  python
+
+17:30:39      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:40     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:40      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:41     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:40      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:41     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:41      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:42     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:30:41      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:42     1001      2946      2.00      0.00  875232  127656   3.28  python
+
+17:30:42      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:43     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:42      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:43     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:43      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:44     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:43      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:44     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:44      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:45     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:30:44      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:45     1001      2946      2.00      0.00  875232  127656   3.28  python
+
+17:30:45      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:46     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:45      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:46     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:46      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:47     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:46      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:47     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:47      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:48     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:30:47      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:48     1001      2946      2.00      0.00  875232  127656   3.28  python
+
+17:30:48      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:49     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:48      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:49     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:49      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:50     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:49      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:50     1001      2946      1.00      0.00  875248  127656   3.28  python
+
+17:30:50      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:51     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:30:50      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:51     1001      2946      1.00      0.00  875232  127656   3.28  python
+
+17:30:51      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:52     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:51      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:52     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:52      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:53     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:52      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:53     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:53      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:54     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:53      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:54     1001      2946      2.00      0.00  875232  127656   3.28  python
+
+17:30:54      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:55     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:30:54      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:55     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:55      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:56     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:55      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:56     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:56      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:57     1001      2946    0.00    1.00    0.00    0.00    1.00     2  python
+
+17:30:56      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:57     1001      2946      3.00      0.00  875232  127656   3.28  python
+
+17:30:57      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:58     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:57      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:58     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:30:58      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:30:59     1001      2946    0.00    1.00    0.00    0.00    1.00     2  python
+
+17:30:58      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:30:59     1001      2946      2.00      0.00  875248  127656   3.28  python
+
+17:30:59      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:00     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:30:59      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:00     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:31:00      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:01     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:31:00      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:01     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:31:01      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:02     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:31:01      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:02     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:31:02      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:03     1001      2946    0.00    0.00    0.00    0.00    0.00     2  python
+
+17:31:02      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:03     1001      2946      3.00      0.00  875232  127656   3.28  python
+
+17:31:03      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:04     1001      2946    1.00    0.00    0.00    0.00    1.00     2  python
+
+17:31:03      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:04     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+17:31:04      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:05     1001      2946    0.00    0.00    0.00    0.00    0.00     0  python
+
+17:31:04      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:05     1001      2946      1.00      0.00  875248  127656   3.28  python
+
+17:31:05      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:06     1001      2946    0.00    0.00    0.00    0.00    0.00     0  python
+
+17:31:05      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:06     1001      2946      1.00      0.00  875232  127656   3.28  python
+
+17:31:06      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+17:31:07     1001      2946    1.00    0.00    0.00    0.00    1.00     3  python
+
+17:31:06      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+17:31:07     1001      2946      0.00      0.00  875232  127656   3.28  python
+
+Average:      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+Average:     1001      2946    0.30    0.10    0.00    0.00    0.40     -  python
+
+Average:      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+Average:     1001      2946      0.73      0.00  875234  127656   3.28  python
